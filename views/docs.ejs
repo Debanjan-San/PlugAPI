@@ -1,0 +1,38 @@
+<section id="about">
+	<p> </p>
+	<div class="row about-how">
+		<h1 class="intro-header">Arus-Api</h1>
+		<h4 style="text-align: center;">Welcome, Traveler, to the Universe of Documentation for the Arus API! 🚀</h4>
+	</div>
+	<div class="row justify-content-center">
+		<h4>Docs Page</h4>
+		<div class="col-twelve"  style="font-size: 16px;">
+			<div class="plan-block" data-aos="fade-up">
+				<div style="overflow-x:auto !important;">
+					<table class="table mb-0" style="width: 100% !important;">
+						<thead class="text-primary">
+							<tr>
+								<th scope="col">API NAME</th>
+								<th scope="col">PARAMETER</th>
+								<th scope="col">INFORMATION</th>
+								<th scope="col">ACTION</th>
+							</tr>
+						</thead>
+						<tbody style="text-align: center !important;">
+							<% apis.forEach(api => { %>
+							<tr>
+								<td><%= api.name %></td>
+								<td><%= api.parameter %></td>
+								<td><%= api.description %></td>
+								<td>
+									<a target="__blank" href="<%= api.route %>" class="button button-primary cta">Try</a>
+								</td>
+							</tr>
+							<% }); %>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div> 
+	</div> 
+</section> 
